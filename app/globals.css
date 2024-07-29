@@ -66,12 +66,11 @@
   body {
     @apply bg-background text-foreground;
   }
-  .navbar-item,
-  .navbar-item-dropdown {
+  .navbar-name {
     @apply uppercase text-sm font-medium cursor-pointer hover:text-gray-600 transition;
   }
-  .navbar-item-dropdown {
-    @apply h-12 w-40;
+  .navbar-item {
+    @apply h-[3rem] w-[12rem];
   }
   .cart-icon {
     @apply relative inline-block;

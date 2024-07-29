@@ -57,7 +57,7 @@ const Search = () => {
               <FormControl>
                 <Input
                   placeholder="Search for products..."
-                  className="lg:w-[25rem] md:w-[15rem] w-[20rem]"
+                  className="xl:w-[25rem] lg:w-[15rem] md:w-[25rem] sm:w-[15rem] w-[12rem]"
                   {...field}
                 />
               </FormControl>
