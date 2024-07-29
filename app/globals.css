@@ -68,9 +68,15 @@
   }
   .navbar-item,
   .navbar-item-dropdown {
-    @apply uppercase text-sm font-medium;
+    @apply uppercase text-sm font-medium cursor-pointer hover:text-gray-600 transition;
   }
   .navbar-item-dropdown {
     @apply h-12 w-40;
+  }
+  .cart-icon {
+    @apply relative inline-block;
+  }
+  .cart-icon-number {
+    @apply absolute top-0 right-0 flex items-center justify-center w-5 h-5 bg-white text-black text-xs font-bold rounded-full border transform translate-x-1/2 -translate-y-1/2;
   }
 }

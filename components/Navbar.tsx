@@ -21,12 +21,15 @@ export const Navbar = () => {
         <p className="navbar-item">women</p>
         <p className="navbar-item">collections</p>
         <p className="navbar-item">accessories</p>
-        <Image
-          src="/icons/shopping-cart.svg"
-          alt="shopping-cart"
-          height={24}
-          width={24}
-        />
+        <div className="cart-icon">
+          <Image
+            src="/icons/shopping-cart.svg"
+            alt="shopping-cart"
+            height={24}
+            width={24}
+          />
+          <div className="cart-icon-number">1</div>
+        </div>
       </div>
       <div className="md:hidden block">
         <DropdownMenu>
@@ -39,7 +42,7 @@ export const Navbar = () => {
             />
           </DropdownMenuTrigger>
           <DropdownMenuContent>
-            <DropdownMenuItem className="navbar-item-dropdown ">
+            <DropdownMenuItem className="navbar-item-dropdown">
               men
             </DropdownMenuItem>
             <DropdownMenuItem className="navbar-item-dropdown">
