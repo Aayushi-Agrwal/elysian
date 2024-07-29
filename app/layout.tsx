@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { bebasneue, poppins } from "./ui/fonts";
+import { manrope } from "./ui/fonts";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={bebasneue.className}>{children}</body>
+      <body className={`${manrope.className}antialiased`}>{children}</body>
     </html>
   );
 }

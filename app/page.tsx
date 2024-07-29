@@ -1,5 +1,11 @@
-import Image from "next/image";
+import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { bebasneue, manrope, poppins } from "./ui/fonts";
 
 export default function Home() {
-  return <main className="">askndlasnds</main>;
+  return (
+    <main className="">
+      <div className={bebasneue.className}>bebas neue</div>
+    </main>
+  );
 }
