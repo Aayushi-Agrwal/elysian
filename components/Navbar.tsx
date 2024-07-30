@@ -115,7 +115,7 @@ export const Navbar = ({
           elysian
         </div>
         {/* <CommandSearch /> */}
-        <Search placeholder="Search invoices..." />
+        <Search />
         {/* <Suspense
           key={query + currentPage}
           fallback={<InvoicesTableSkeleton />}
