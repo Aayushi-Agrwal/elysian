@@ -27,6 +27,8 @@ import {
   MEN_CATEGORIES,
   WOMEN_CATEGORIES,
 } from "@/constants";
+import CommandSearch from "./CommandSearch";
+import { Suspense } from "react";
 
 const createMenuItems = (categories: ICategoryItems) => {
   return (Object.keys(categories) as (keyof ICategoryItems)[]).map(
@@ -94,7 +96,16 @@ const Icons = ({
     </TooltipProvider>
   );
 };
-export const Navbar = () => {
+export const Navbar = ({
+  searchParams,
+}: {
+  searchParams?: {
+    query?: string;
+    page?: string;
+  };
+}) => {
+  const query = searchParams?.query || "";
+  const currentPage = Number(searchParams?.page) || 1;
   return (
     <nav className="flex flex-col justify-around lg:h-16 h-28 py-2 bg-[#E3DED3] sm:px-8 px-2">
       <div className="flex items-center justify-between">
@@ -103,7 +114,14 @@ export const Navbar = () => {
         >
           elysian
         </div>
-        <Search />
+        {/* <CommandSearch /> */}
+        <Search placeholder="Search invoices..." />
+        {/* <Suspense
+          key={query + currentPage}
+          fallback={<InvoicesTableSkeleton />}
+        >
+          <Table query={query} currentPage={currentPage} />
+        </Suspense> */}
         <div className="items-center lg:gap-6 gap-2 lg:flex hidden">
           <MenuItem />
         </div>
