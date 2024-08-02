@@ -78,4 +78,7 @@
   .cart-icon-number {
     @apply absolute top-0 right-0 flex items-center justify-center w-5 h-5 bg-white text-black text-xs font-bold rounded-full border transform translate-x-1/2 -translate-y-1/2;
   }
+  .size-circle {
+    @apply flex uppercase items-center justify-center w-12 h-12 text-black text-sm font-medium rounded-full border-[1.5px] border-gray-300;
+  }
 }
